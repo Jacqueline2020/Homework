@@ -1,0 +1,30 @@
+#1.实现print函数
+
+def print_string(*values,sep=' ',end='\n'): #不定长参数，默认参数
+    string=''
+    for value in values:
+        string += str(value)
+        string += sep
+    string=string[:-1]+end #最后一个字符去掉
+    return string
+
+s1=print_string('This is a test')
+s2=print_string('This', 'is', 'a', 'test')
+s3=print_string('This', 'is', 'a', 'test', sep = '-')
+s4=print_string('This', 'is', 'a', 'test', ',', 'Yes', sep = '_', end = '.')
+print(s1)
+print(s2)
+print(s3)
+print(s4)
+
+
+#2.打印斐波那契数列
+
+def fib_loop(n):
+    a,b=0,1
+    for i in range(n+1): #从0开始，截止到n 
+        a,b = b,a+b
+    return a
+
+for i in range(20): #从0-19
+    print(fib_loop(i),end=' ')
