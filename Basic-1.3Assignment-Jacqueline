@@ -12,6 +12,10 @@ s1=print_string('This is a test')
 s2=print_string('This', 'is', 'a', 'test')
 s3=print_string('This', 'is', 'a', 'test', sep = '-')
 s4=print_string('This', 'is', 'a', 'test', ',', 'Yes', sep = '_', end = '.')
+s1
+s2
+s3
+s4
 print(s1)
 print(s2)
 print(s3)
